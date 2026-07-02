@@ -1,4 +1,4 @@
-# Day 2 Assignment - Two Pointer Technique
+# Day 3 Assignment - Two Pointer Technique
 
 **Course:** DSA Problem Solving Bootcamp  
 **Topic:** Two Pointer Technique  
