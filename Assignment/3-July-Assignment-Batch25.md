@@ -2,9 +2,9 @@
 
 **Course:** DSA Problem Solving Bootcamp  
 **Topic:** Two Pointer Technique  
-**Total Problems:** 4  
+**Total Problems:** 6  
 **Difficulty:** Easy → Medium  
-**Expected Time:** 60–90 Minutes
+**Expected Time:** 90–120 Minutes
 
 ---
 
@@ -43,20 +43,20 @@ Return the number of elements remaining after removing `val`.
 
 **Input**
 
-```
+```text
 nums = [3,2,2,3]
 val = 3
 ```
 
 **Output**
 
-```
+```text
 2
 ```
 
 Remaining array
 
-```
+```text
 [2,2]
 ```
 
@@ -64,8 +64,8 @@ Remaining array
 
 ### Expected Complexity
 
-- Time: O(n)
-- Space: O(1)
+- Time: **O(n)**
+- Space: **O(1)**
 
 ---
 
@@ -87,13 +87,13 @@ You must perform this operation in-place.
 
 **Input**
 
-```
+```text
 [0,1,0,3,12]
 ```
 
 **Output**
 
-```
+```text
 [1,3,12,0,0]
 ```
 
@@ -101,8 +101,8 @@ You must perform this operation in-place.
 
 ### Expected Complexity
 
-- Time: O(n)
-- Space: O(1)
+- Time: **O(n)**
+- Space: **O(1)**
 
 ---
 
@@ -124,14 +124,14 @@ Exactly one solution exists.
 
 **Input**
 
-```
+```text
 numbers = [2,7,11,15]
 target = 9
 ```
 
 **Output**
 
-```
+```text
 [1,2]
 ```
 
@@ -139,8 +139,8 @@ target = 9
 
 ### Expected Complexity
 
-- Time: O(n)
-- Space: O(1)
+- Time: **O(n)**
+- Space: **O(1)**
 
 ---
 
@@ -160,13 +160,13 @@ Given a sorted integer array (which may contain negative numbers), return an arr
 
 **Input**
 
-```
+```text
 [-7,-3,2,3,11]
 ```
 
 **Output**
 
-```
+```text
 [4,9,9,49,121]
 ```
 
@@ -174,21 +174,127 @@ Given a sorted integer array (which may contain negative numbers), return an arr
 
 ### Expected Complexity
 
-- Time: O(n)
-- Space: O(n)
+- Time: **O(n)**
+- Space: **O(n)**
+
+---
+
+# Problem 5 - Sort Colors
+
+**LeetCode:** 75
+
+## Pattern
+
+Two Pointer / Three Pointer (Dutch National Flag)
+
+## Problem Statement
+
+Given an array containing only `0`, `1`, and `2`, sort the array **in-place** without using the built-in sort function.
+
+### Example
+
+**Input**
+
+```text
+[2,0,2,1,1,0]
+```
+
+**Output**
+
+```text
+[0,0,1,1,2,2]
+```
+
+### Hint
+
+Think about maintaining three regions:
+
+- 0's region
+- 1's region
+- 2's region
+
+Try solving it in **one pass**.
+
+---
+
+### Expected Complexity
+
+- Time: **O(n)**
+- Space: **O(1)**
+
+---
+
+# Problem 6 - Separate Even and Odd Numbers (In-place)
+
+## Pattern
+
+Two Pointer — Opposite Ends
+
+## Problem Statement
+
+Given an integer array, rearrange it **in-place** so that:
+
+- All **even** numbers appear before all **odd** numbers.
+- The relative order does **not** matter.
+- Do **not** use an extra array.
+
+### Example 1
+
+**Input**
+
+```text
+[12,7,9,14,6,5,10]
+```
+
+**Possible Output**
+
+```text
+[12,10,6,14,9,5,7]
+```
+
+### Example 2
+
+**Input**
+
+```text
+[1,3,5,7,2,4]
+```
+
+**Possible Output**
+
+```text
+[4,2,5,7,3,1]
+```
+
+> Any valid arrangement where all even numbers come before all odd numbers is accepted.
+
+### Hint
+
+Start one pointer from the left and one from the right.
+
+---
+
+### Expected Complexity
+
+- Time: **O(n)**
+- Space: **O(1)**
 
 ---
 
 # Reflection Questions
 
-After completing all four problems, answer the following:
+After completing all six problems, answer the following:
 
 1. Which problems used the **Same Direction** two-pointer pattern?
 2. Which problems used the **Opposite Ends** two-pointer pattern?
-3. Why does **Two Sum II** require the array to be sorted?
-4. Why can't **Move Zeroes** be solved efficiently using only one pointer?
-5. What is the role of the **slow pointer** in Problems 1 and 2?
-6. In **Squares of a Sorted Array**, why do we compare the absolute values at both ends?
+3. Which problem used the **Dutch National Flag (Three Pointer)** approach?
+4. Why does **Two Sum II** require the array to be sorted?
+5. Why can't **Move Zeroes** be solved efficiently using only one pointer?
+6. What is the role of the **slow pointer** in Problems 1 and 2?
+7. In **Squares of a Sorted Array**, why do we compare the absolute values at both ends?
+8. Why is **Sort Colors** completed in a single pass?
+9. Why is the relative order not important in the **Even-Odd Separation** problem?
+10. Which problem did you find the most challenging, and why?
 
 ---
 
@@ -198,15 +304,29 @@ Without looking at any solution, explain in your own words:
 
 - When should you think of using the **Opposite Ends** pattern?
 - When should you think of using the **Same Direction** pattern?
+- When should you think of using the **Dutch National Flag** (Three Pointer) approach?
+
+---
+
+# Pattern Summary
+
+| Problem | Pattern |
+|---------|---------|
+| Remove Element | Same Direction |
+| Move Zeroes | Same Direction |
+| Two Sum II | Opposite Ends |
+| Squares of a Sorted Array | Opposite Ends |
+| Sort Colors | Dutch National Flag (Three Pointer) |
+| Separate Even and Odd Numbers | Opposite Ends |
 
 ---
 
 # Next Class Preview
 
-**Topic:** Prefix Sum
+## Topic: Prefix Sum
 
 Before the next lecture, think about the following question:
 
-> If multiple queries ask for the sum of different subarrays, can we avoid calculating the sum from scratch every time?
+> **If multiple queries ask for the sum of different subarrays, can we avoid calculating the sum from scratch every time?**
 
-We'll answer this using the **Prefix Sum** technique in the next class.
+We'll answer this using the **Prefix Sum** technique and learn how preprocessing can reduce multiple range-sum queries from **O(n)** to **O(1)**.
