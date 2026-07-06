@@ -73,6 +73,13 @@ A complete roadmap of common DSA patterns and when to use them.
 🔗 https://whimsical.com/dsa-patterns-47DQdVg8MiLZ1idPyveWFr?fbclid=PAT01DUARtPvhleHRuA2FlbQIxMABzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAacRzfU7SU9SDhT9SIcKlH6nlJp7Qv0KwWnTh_R48gTvDkpZaAPJu-ZhwyoAGA_aem_1yP_ce6DNEdu2Im85TmQtw
 
 ---
+---
+
+## 🧠 WhiteBoard
+
+https://drive.google.com/drive/folders/1hrhQb0wpqJhu2BplnHjPH65LGVd_6bgQ?usp=drive_link
+
+---
 
 # 💻 Practice Platforms
 
